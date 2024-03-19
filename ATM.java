@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class ATM {
+
     private BankAccount account;
     private Scanner scanner;
 
@@ -60,10 +61,11 @@ public class ATM {
             System.out.println("Withdrawal successful");
         }
     }
-}
+
 public static void main(String[] args) {
         BankAccount userAccount = new BankAccount(1000); // Initial balance is $1000
         ATM atm = new ATM(userAccount);
         atm.run();
     }
 
+}
