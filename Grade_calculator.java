@@ -75,10 +75,3 @@ public class Grade_calculator {
 }
 
 
-    
-
-    
-   
-}
-
-
