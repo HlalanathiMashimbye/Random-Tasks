@@ -35,7 +35,7 @@ public class ATM {
                     withdraw();
                     break;
                 case 4:
-                    System.out.println("Thank you for using the ATM");
+                    System.out.println("Goodbye!");
                     break;
                 default:
                     System.out.println("Invalid choice");
@@ -44,7 +44,7 @@ public class ATM {
     }
 
     private void checkBalance() {
-        System.out.println("Your current balance is: $" + account.getBalance());
+        System.out.println("Your current balance is: R" + account.getBalance());
     }
 
     private void deposit() {
@@ -63,7 +63,7 @@ public class ATM {
     }
 
 public static void main(String[] args) {
-        BankAccount userAccount = new BankAccount(1000); // Initial balance is $1000
+        BankAccount userAccount = new BankAccount(1000.0);
         ATM atm = new ATM(userAccount);
         atm.run();
     }
